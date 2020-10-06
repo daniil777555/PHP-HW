@@ -58,7 +58,7 @@ function translit($str){
     
     for($i = 0; $i <= count($arrFromStr) - 1; $i++){
         $el =  $converter[$arrFromStr[$i]];
-        if($el === "" || $el === "") $arrFromStr[$i] = "($arrFromStr[$i])";
+        if($el === "") $arrFromStr[$i] = "";
         if($el) {
              $arrFromStr[$i] = $el;
         }
@@ -78,7 +78,16 @@ echo str_replace(" ", "_", $str);
 
 function replace($sub, $search, $replace){
     if(!(is_array($sub)))$arrFromStr = preg_split('//u', $sub, null, PREG_SPLIT_NO_EMPTY);
-    else $arrFromStr = $sub;
+    else{ 
+        //Так как не известно в каком виде поступит массив, 1 элемент может быть равен 1 букве или целому слову,
+        //по-этому я превращаю массив в строку и потом собираю его кладя в 1 элемент 1 символ. 
+        //Сделано это для корректной замены.
+        $str = implode($sub);
+        $arrFromStr = Array();
+        for($i = 0; $i < strlen($str); $i++){
+            $arrFromStr[$i] = $str[$i];
+        }
+    }
     foreach($arrFromStr as $key => $el){
         if($el === $search) $arrFromStr[$key] = $replace;
     }
