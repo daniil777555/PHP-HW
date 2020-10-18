@@ -1,0 +1,125 @@
+
+
+.goodses{
+    width: 1200px;
+    display: flex;
+    margin-bottom: 100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+a{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    color: #120fc7;
+    text-decoration: none;
+}
+
+.about{
+    min-height: 427px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.price{
+    align-self: center;
+}
+
+.btn{
+    cursor: pointer;
+    align-self: center;
+}
+
+.description{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.desc-in-desc{
+    margin: 10px 0;
+}
+
+.price-in-desc{
+    text-align: center;
+}
+.btn-in-desc{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.reviews{
+    width: 900px;
+    margin: 100px auto 0 auto;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+.date{
+    align-self: flex-end;
+}
+
+.name{
+    margin: 0;
+}
+
+
+.form-rev{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-rev{
+    text-align: center;
+    font-size: 20px;
+}
+
+.input-name{
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: none;
+    margin: 0 0 30px 0 ;
+}
+
+.input-rev{
+    width: 450px;
+    height: 100px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: none;
+}
+
+.send{
+    margin: 30px 0 0 0 ;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    background-color: #120fc7;
+    color: #fff;
+
+}
+
+
